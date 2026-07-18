@@ -1,0 +1,20 @@
+/* 彻底清除顶部导航栏和标题区域的视差滚动、阻尼及位移效果 */
+#page-header {
+  transform: none !important;
+  transition: none !important;
+  background: var(--global-bg) !important; /* 强制背景为网页底色 */
+}
+
+/* 调整纯文字标题的间距，让它看起来更精致紧凑 */
+#page-header #post-info {
+  position: relative !important;
+  bottom: 0 !important;
+  padding: 40px 10px 10px 10px !important;
+  text-align: left !important;
+  color: var(--font-color) !important; /* 字体颜色跟正文一致 */
+}
+
+/* 顺便隐藏无用的渐变遮罩 */
+#page-header:before {
+  background: none !important;
+}
